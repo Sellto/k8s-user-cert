@@ -38,10 +38,10 @@ metadata:
 rules:
 - apiGroups: [""]
   resources: ["pods", "services"]
-  verbs: ["create", "get", "update", "list", "delete"]
+  verbs: ["create", "get", "update", "list", "delete", "patch"]
 - apiGroups: ["apps"]
   resources: ["deployments","daemonset"]
-  verbs: ["create", "get", "update", "list", "delete"]`
+  verbs: ["create", "get", "update", "list", "delete", "patch"]`
 }
 
 func CreateRoleBinding(user,ns string)string{
